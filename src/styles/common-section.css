@@ -1,0 +1,14 @@
+.common__section {
+    background: linear-gradient(#00000056, #00000056),
+        url("../assets/images/common__img.webp") no-repeat top center;
+    background-size: cover;
+    padding: 100px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.common__section h1 {
+    color: #fff;
+    font-weight: 600;
+}

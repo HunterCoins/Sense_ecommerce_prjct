@@ -1,0 +1,21 @@
+.table tr td img {
+    width: 80px !important;
+    height: 80px !important;
+    object-fit: cover;
+}
+
+td i {
+    cursor: pointer;
+}
+
+td {
+    transition: 0.3s;
+    color: var(--primary-color);
+}
+
+td span {
+    display: inline-block;
+}
+td span:active {
+    transform: scale(1.3);
+}
