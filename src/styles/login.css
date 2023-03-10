@@ -26,8 +26,14 @@
 
 .auth__form p a {
     color: rgb(255, 255, 255);
+    font-weight: 600;
 }
 
-.login__bottom {
-    color: rgba(255, 255, 255, 0.75);
+.login__bottom,
+.signup__bottom {
+    color: rgba(255, 255, 255, 0.808);
+}
+.login__bottom a,
+.signup__bottom a {
+    margin-left: 5px;
 }

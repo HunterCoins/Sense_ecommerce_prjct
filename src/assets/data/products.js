@@ -1,13 +1,13 @@
-import jeans from "../images/jeans.png";
-import longsleeve from "../images/longsleeve.png";
-import hoodie from "../images/hoodie.png";
+import pants from "../images/pants.png";
+import shirt from "../images/shirts.png";
+import blazer from "../images/blazer.png";
 import shoes from "../images/shoes.png";
 const products = [
     {
         id: "01",
-        productName: "Jeans 1",
-        imgUrl: jeans,
-        category: "jeans",
+        productName: "Pants 1",
+        imgUrl: pants,
+        category: "pants",
         price: 193,
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -25,9 +25,9 @@ const products = [
 
     {
         id: "02",
-        productName: "Jeans 2",
-        imgUrl: jeans,
-        category: "jeans",
+        productName: "Pants 2",
+        imgUrl: pants,
+        category: "pants",
         price: 253,
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -49,9 +49,9 @@ const products = [
 
     {
         id: "03",
-        productName: "Jeans 3",
-        imgUrl: jeans,
-        category: "jeans",
+        productName: "Pants 3",
+        imgUrl: pants,
+        category: "pants",
         price: 173,
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -72,9 +72,9 @@ const products = [
     },
     {
         id: "26",
-        productName: "Longsleeve 1",
-        imgUrl: longsleeve,
-        category: "longsleeve",
+        productName: "Shirt 1",
+        imgUrl: shirt,
+        category: "shirt",
         price: 253,
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -95,9 +95,9 @@ const products = [
     },
     {
         id: "04",
-        productName: "Jeans 4",
-        imgUrl: jeans,
-        category: "jeans",
+        productName: "Pants 4",
+        imgUrl: pants,
+        category: "pants",
         price: 163,
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -119,9 +119,9 @@ const products = [
 
     {
         id: "05",
-        productName: "Jeans 5",
-        imgUrl: jeans,
-        category: "jeans",
+        productName: "Pants 5",
+        imgUrl: pants,
+        category: "pants",
         price: 163,
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -143,9 +143,9 @@ const products = [
 
     {
         id: "06",
-        productName: "Jeans 6",
-        imgUrl: jeans,
-        category: "jeans",
+        productName: "Pants 6",
+        imgUrl: pants,
+        category: "pants",
         price: 163,
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -166,9 +166,9 @@ const products = [
     },
     {
         id: "07",
-        productName: "Jeans 7",
-        imgUrl: jeans,
-        category: "jeans",
+        productName: "Pants 7",
+        imgUrl: pants,
+        category: "pants",
         price: 99,
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -190,9 +190,9 @@ const products = [
 
     {
         id: "27",
-        productName: "Jeans 8",
-        imgUrl: jeans,
-        category: "jeans",
+        productName: "Pants 8",
+        imgUrl: pants,
+        category: "pants",
         price: 173,
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -214,9 +214,9 @@ const products = [
 
     {
         id: "08",
-        productName: "Longsleeve 2",
-        imgUrl: longsleeve,
-        category: "longsleeve",
+        productName: "Shirt 2",
+        imgUrl: shirt,
+        category: "shirt",
         price: 89,
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -238,9 +238,9 @@ const products = [
 
     {
         id: "09",
-        productName: "Longsleeve 3",
-        imgUrl: longsleeve,
-        category: "longsleeve",
+        productName: "Shirt 3",
+        imgUrl: shirt,
+        category: "shirt",
         price: 112,
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -262,9 +262,9 @@ const products = [
 
     {
         id: "10",
-        productName: "Hoodie 1",
-        imgUrl: hoodie,
-        category: "hoodie",
+        productName: "Blazer 1",
+        imgUrl: blazer,
+        category: "blazer",
         price: 799,
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -285,9 +285,9 @@ const products = [
     },
     {
         id: "25",
-        productName: "Longsleeve 4",
-        imgUrl: longsleeve,
-        category: "longsleeve",
+        productName: "Shirt 4",
+        imgUrl: shirt,
+        category: "shirt",
         price: 99,
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -308,9 +308,9 @@ const products = [
     },
     {
         id: "11",
-        productName: "Hoodie 2",
-        imgUrl: hoodie,
-        category: "hoodie",
+        productName: "Blazer 2",
+        imgUrl: blazer,
+        category: "blazer",
         price: 799,
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -332,9 +332,9 @@ const products = [
 
     {
         id: "12",
-        productName: "Hoodie 3",
-        imgUrl: hoodie,
-        category: "hoodie",
+        productName: "Blazer 3",
+        imgUrl: blazer,
+        category: "blazer",
         price: 599,
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -356,9 +356,9 @@ const products = [
 
     {
         id: "13",
-        productName: "Hoodie 4",
-        imgUrl: hoodie,
-        category: "hoodie",
+        productName: "Blazer 4",
+        imgUrl: blazer,
+        category: "blazer",
         price: 799,
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -380,9 +380,9 @@ const products = [
 
     {
         id: "14",
-        productName: "Hoodie 5",
-        imgUrl: hoodie,
-        category: "hoodie",
+        productName: "Blazer 5",
+        imgUrl: blazer,
+        category: "blazer",
         price: 899,
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -404,9 +404,9 @@ const products = [
 
     {
         id: "15",
-        productName: "Hoodie 6",
-        imgUrl: hoodie,
-        category: "hoodie",
+        productName: "Blazer 6",
+        imgUrl: blazer,
+        category: "blazer",
         price: 699,
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -428,9 +428,9 @@ const products = [
 
     {
         id: "16",
-        productName: "Hoodie 7",
-        imgUrl: hoodie,
-        category: "hoodie",
+        productName: "Blazer 7",
+        imgUrl: blazer,
+        category: "blazer",
         price: 299,
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -452,9 +452,9 @@ const products = [
 
     {
         id: "17",
-        productName: "Hoodie 8",
-        imgUrl: hoodie,
-        category: "hoodie",
+        productName: "Blazer 8",
+        imgUrl: blazer,
+        category: "blazer",
         price: 299,
         shortDesc:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",

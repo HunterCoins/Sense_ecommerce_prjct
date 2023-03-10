@@ -17,12 +17,12 @@
 }
 
 .logo img {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.8rem;
+    height: 1.8rem;
 }
 
 .logo h1 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 600;
     color: var(--primary-color);
 }
@@ -50,10 +50,70 @@
     cursor: pointer;
 }
 
-.nav__icons span img {
+.nav__icons .profile img {
     width: 30px;
     height: 30px;
     cursor: pointer;
+    border-radius: 50%;
+}
+.nav__icons .profile {
+    position: relative;
+    z-index: 9;
+}
+
+.nav__icons .profile .profile__actions div {
+    position: absolute;
+    top: 96%;
+    left: -120%;
+    width: 120px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 30px;
+    cursor: pointer;
+}
+.nav__icons .profile .profile__actions {
+    display: none;
+}
+
+.nav__icons .profile:hover .profile__actions {
+    display: block !important;
+}
+
+.nav__icons .profile .profile__actions div a:nth-child(1) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.233);
+}
+.nav__icons .profile .profile__actions div a:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.nav__icons .profile .profile__actions div a {
+    padding: 6px;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    background: var(--primary-color);
+    transition: all 0.2s;
+    color: #fff;
+    font-weight: 600;
+}
+.nav__icons .profile .profile__actions div a:hover {
+    background: #1737a1;
+}
+.nav__icons .profile .profile__actions .profile__logout {
+    padding: 6px;
+    text-decoration: none;
+    text-align: center;
+    background: var(--primary-color);
+    transition: all 0.2s;
+    color: #fff;
+    font-weight: 600;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.nav__icons .profile .profile__actions .profile__logout:hover {
+    background: #1737a1;
 }
 
 .mobile__menu {
@@ -141,12 +201,12 @@
     }
 
     .logo img {
-        width: 1.2rem;
-        height: 1.2rem;
+        width: 1.4rem;
+        height: 1.4rem;
     }
 
     .logo h1 {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .fav__icon i,

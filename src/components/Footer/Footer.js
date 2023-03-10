@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import "./footer.css";
 
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
@@ -17,31 +17,34 @@ const Footer = () => {
                         </div>
 
                         <p className="footer__text mt-4">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
-                            quibusdam repellendus sunt dolore repellat iusto architecto sint quasi
-                            exercitationem ducimus!
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Saepe quibusdam repellendus sunt dolore
+                            repellat iusto architecto sint quasi exercitationem
+                            ducimus!
                         </p>
                     </Col>
-                    <Col lg="3" md="3" className="mb-4">
+                    <Col lg="3" md="3" sm="4" className="mb-4">
                         <div className="footer__quick-links">
-                            <h4 className="quick__links-title">Top Categories</h4>
-                            <ListGroup>
-                                <ListGroupItem className="ps-0 border-0">
-                                    <Link to="#">Mobile Phones</Link>
+                            <h4 className="quick__links-title">
+                                Top Categories
+                            </h4>
+                            <ListGroup className="motherfucker">
+                                <ListGroupItem className="ps-0 border-0 ">
+                                    <Link to="#">Shirts</Link>
                                 </ListGroupItem>
                                 <ListGroupItem className="ps-0 border-0">
-                                    <Link to="#">Modern Sofa</Link>
+                                    <Link to="#">Pants</Link>
                                 </ListGroupItem>
                                 <ListGroupItem className="ps-0 border-0">
-                                    <Link to="#">Arm Chair</Link>
+                                    <Link to="#">Blazers</Link>
                                 </ListGroupItem>
                                 <ListGroupItem className="ps-0 border-0">
-                                    <Link to="#">Smart Watches</Link>
+                                    <Link to="#">Shoes</Link>
                                 </ListGroupItem>
                             </ListGroup>
                         </div>
                     </Col>
-                    <Col lg="2" md="3" className="mb-4">
+                    <Col lg="2" md="3" sm="4" className="mb-4">
                         <div className="footer__quick-links">
                             <h4 className="quick__links-title">Useful Links</h4>
                             <ListGroup>
@@ -60,7 +63,7 @@ const Footer = () => {
                             </ListGroup>
                         </div>
                     </Col>
-                    <Col lg="3" md="4">
+                    <Col lg="3" md="4" sm="4">
                         <div className="footer__quick-links">
                             <h4 className="quick__links-title">Contact</h4>
                             <ListGroup className="footer__contact">
@@ -68,7 +71,10 @@ const Footer = () => {
                                     <span>
                                         <i className="ri-map-pin-line"></i>
                                     </span>
-                                    <p>96 Guildford Rd, East Dean, United Kingdom</p>
+                                    <p>
+                                        96 Guildford Rd, East Dean, United
+                                        Kingdom
+                                    </p>
                                 </ListGroupItem>
 
                                 <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-2">
@@ -91,7 +97,8 @@ const Footer = () => {
                     <Col lg="12">
                         <p className="footer__copyright ">
                             <i className="ri-copyright-line"></i>
-                            Copyright {year} developed by Someone. All rights reserved.
+                            Copyright {year} developed by Someone. All rights
+                            reserved.
                         </p>
                     </Col>
                 </Row>

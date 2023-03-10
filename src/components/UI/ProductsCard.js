@@ -1,7 +1,6 @@
-import React from "react";
 import "../../styles/product-card.css";
 import { Col } from "reactstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../redux/slices/cartSlice";
@@ -9,6 +8,10 @@ import { toast } from "react-toastify";
 
 const ProductsCard = ({ item }) => {
     const dispatch = useDispatch();
+    const navigate = useNavigate();
+    const navigateToInfo = () => {
+        navigate(`/shop/${item.id}`);
+    };
 
     const addToCart = () => {
         dispatch(
@@ -24,9 +27,9 @@ const ProductsCard = ({ item }) => {
     };
 
     return (
-        <Col lg="3" md="4" className="mb-2">
+        <Col lg="3" md="4" sm="6" xs="6" className="product__card">
             <div className="product__item">
-                <div className="product__img">
+                <div className="product__img" onClick={navigateToInfo}>
                     <img src={item.imgUrl} alt={item.productName} />
                 </div>
                 <div className="p-2 product__info">

@@ -5,7 +5,6 @@ import "../styles/home.css";
 import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 import products from "../assets/data/products";
-import heroImg from "../assets/images/hero-img.png";
 
 import Services from "../services/Services";
 import ProductsList from "../components/UI/ProductsList";
@@ -17,10 +16,18 @@ const Home = () => {
     const [popular, setPopular] = useState([]);
 
     useEffect(() => {
-        const filteredTrending = products.filter((item) => item.category === "longsleeve");
-        const filteredBest = products.filter((item) => item.category === "jeans");
-        const filteredNewArrivals = products.filter((item) => item.category === "hoodie");
-        const filteredPopular = products.filter((item) => item.category === "shoes");
+        const filteredTrending = products.filter(
+            (item) => item.category === "shirt"
+        );
+        const filteredBest = products.filter(
+            (item) => item.category === "pants"
+        );
+        const filteredNewArrivals = products.filter(
+            (item) => item.category === "blazer"
+        );
+        const filteredPopular = products.filter(
+            (item) => item.category === "shoes"
+        );
 
         setTrending(filteredTrending);
         setBestSales(filteredBest);
@@ -33,15 +40,18 @@ const Home = () => {
             <section className="hero__section">
                 <Container>
                     <Row>
-                        <Col lg="6" md="6">
+                        <Col lg="6" md="6" sm="7" xs="12">
                             <div className="hero__content">
-                                <p className="hero__subtitle">SENSE ECOMMERCE SHOP</p>
+                                <p className="hero__subtitle">
+                                    SENSE ECOMMERCE SHOP
+                                </p>
                                 <h2>
                                     Catch Your Own <br /> Stylish & Look
                                 </h2>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-                                    blanditiis assumenda ducimus iure saepe mollitia vitae!
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Quos blanditiis assumenda
+                                    ducimus iure saepe mollitia vitae!
                                 </p>
 
                                 <button className="buy__btn">
@@ -50,11 +60,7 @@ const Home = () => {
                             </div>
                         </Col>
 
-                        <Col lg="6" md="6">
-                            <div className="hero__img">
-                                <img src={heroImg} alt="main-page" />
-                            </div>
-                        </Col>
+                        <Col lg="6" md="6" className="hero__bg"></Col>
                     </Row>
                 </Container>
             </section>
@@ -64,7 +70,9 @@ const Home = () => {
                 <Container>
                     <Row>
                         <Col lg="12" className="text-center">
-                            <h2 className="section__title">Trending Products</h2>
+                            <h2 className="section__title mb-5">
+                                Trending Products
+                            </h2>
                         </Col>
                         <ProductsList data={trending} />
                     </Row>
@@ -74,7 +82,7 @@ const Home = () => {
                 <Container>
                     <Row>
                         <Col lg="12" className="text-center">
-                            <h2 className="section__title">Best Sales </h2>
+                            <h2 className="section__title mb-5">Best Sales </h2>
                         </Col>
                         <ProductsList data={bestSales} />
                     </Row>
@@ -84,8 +92,10 @@ const Home = () => {
             <section className="new__arrivals">
                 <Container>
                     <Row>
-                        <Col lg="12" className="text-center mb-5">
-                            <h2 className="section__title">New Arrivals</h2>
+                        <Col lg="12" className="text-center">
+                            <h2 className="section__title mb-5">
+                                New Arrivals
+                            </h2>
                         </Col>
                         <ProductsList data={newArrivals} />
                     </Row>
@@ -94,8 +104,10 @@ const Home = () => {
             <section className="popular__category">
                 <Container>
                     <Row>
-                        <Col lg="12" className="text-center mb-5">
-                            <h2 className="section__title">Popular in Category</h2>
+                        <Col lg="12" className="text-center">
+                            <h2 className="section__title mb-5">
+                                Popular in Category
+                            </h2>
                         </Col>
                         <ProductsList data={popular} />
                     </Row>

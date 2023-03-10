@@ -15,22 +15,29 @@ const Shop = () => {
     const handleCategoryFilter = (products) => {
         let filteredProducts = [];
         switch (category) {
-            case "longsleeve":
-                filteredProducts = products.filter((item) => item.category === "longsleeve");
+            case "shirt":
+                filteredProducts = products.filter(
+                    (item) => item.category === "shirt"
+                );
                 break;
-            case "hoodie":
-                filteredProducts = products.filter((item) => item.category === "hoodie");
+            case "pants":
+                filteredProducts = products.filter(
+                    (item) => item.category === "pants"
+                );
+                break;
+            case "blazer":
+                filteredProducts = products.filter(
+                    (item) => item.category === "blazer"
+                );
                 break;
             case "shoes":
-                filteredProducts = products.filter((item) => item.category === "shoes");
-                break;
-            case "jeans":
-                filteredProducts = products.filter((item) => item.category === "jeans");
+                filteredProducts = products.filter(
+                    (item) => item.category === "shoes"
+                );
                 break;
             default:
                 filteredProducts = products;
         }
-        // setProductsData(filteredProducts);
         return filteredProducts;
     };
 
@@ -45,7 +52,10 @@ const Shop = () => {
                 filteredProducts = products.sort((a, b) => b.price - a.price);
                 break;
             case "popularity":
-                filteredProducts = products.sort((a, b) => b.popularity - a.popularity);
+                filteredProducts = products.sort(
+                    (a, b) => b.popularity - a.popularity
+                );
+                break;
             default:
                 filteredProducts = products;
         }
@@ -59,7 +69,9 @@ const Shop = () => {
         return searchedProducts;
     };
 
-    const productsToRender = handleCategoryFilter(handleSortBy(handeSearch(products)));
+    const productsToRender = handleCategoryFilter(
+        handleSortBy(handeSearch(products))
+    );
 
     return (
         <Helmet title="Shop">
@@ -68,28 +80,38 @@ const Shop = () => {
             <section>
                 <Container>
                     <Row>
-                        <Col lg="3" md="3">
+                        <Col lg="3" md="4" sm="5" xs="12">
                             <div className="filter__widget">
-                                <select onChange={(e) => setCategory(e.target.value)}>
+                                <select
+                                    onChange={(e) =>
+                                        setCategory(e.target.value)
+                                    }
+                                >
                                     <option>Filter By Category</option>
-                                    <option value="longsleeve">Longsleeve</option>
-                                    <option value="jeans">Jeans</option>
-                                    <option value="hoodie">Hoodie</option>
+                                    <option value="shirt">Shirts</option>
+                                    <option value="pants">Pants</option>
+                                    <option value="blazer">Blazers</option>
                                     <option value="shoes">Shoes</option>
                                 </select>
                             </div>
                         </Col>
-                        <Col lg="3" md="3">
+                        <Col lg="3" md="3" sm="5" xs="12">
                             <div className="filter__widget">
-                                <select onChange={(e) => setSortBy(e.target.value)}>
+                                <select
+                                    onChange={(e) => setSortBy(e.target.value)}
+                                >
                                     <option>Sort By</option>
                                     <option value="ascending">Ascending</option>
-                                    <option value="descending">Descending</option>
-                                    <option value="popularity">Popularity</option>
+                                    <option value="descending">
+                                        Descending
+                                    </option>
+                                    <option value="popularity">
+                                        Popularity
+                                    </option>
                                 </select>
                             </div>
                         </Col>
-                        <Col lg="6" md="6">
+                        <Col lg="6" md="5" sm="9" xs="12">
                             <div className="search__box">
                                 <input
                                     type="text"
@@ -105,11 +127,13 @@ const Shop = () => {
                 </Container>
             </section>
 
-            <section className="pt-o">
+            <section className="pt-0">
                 <Container>
                     <Row>
                         {productsToRender.length === 0 ? (
-                            <h1 className="text-center fs-4">No products are found!</h1>
+                            <h1 className="text-center fs-4">
+                                No products are found!
+                            </h1>
                         ) : (
                             <ProductsList data={productsToRender} />
                         )}
