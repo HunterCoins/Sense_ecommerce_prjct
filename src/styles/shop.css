@@ -38,45 +38,18 @@
     color: var(--primary-color);
 }
 
-.product__card {
-    border-bottom: 1px solid #c9c9c9;
-    border-right: 1px solid #c9c9c9;
-    padding: 10px;
-}
-
-@media only screen and (min-width: 991.99px) {
-    .product__card:nth-child(4n + 1) {
-        border-left: 1px solid #c9c9c9;
-    }
-}
-
-@media only screen and (max-width: 991.98px) and (min-width: 767.99px) {
-    .product__card:nth-child(3n + 1) {
-        border-left: 1px solid #c9c9c9;
-    }
-}
-
-@media only screen and (max-width: 767.98px) and (min-width: 575.99px) {
+@media only screen and (max-width: 768px) {
     .search__box {
         margin-top: 15px;
     }
-    .product__card:nth-child(2n + 1) {
-        border-left: 1px solid #c9c9c9;
-    }
 }
 
-@media only screen and (max-width: 575.98px) {
+@media only screen and (max-width: 576px) {
     .filter__widget select {
         width: 100%;
     }
     .filter__widget:nth-child(1) {
         margin-top: 15px;
-    }
-    .product__card-bottom .price {
-        font-size: 1.1rem;
-    }
-    .product__card:nth-child(2n) {
-        border-right: unset;
     }
     .search__box {
         margin-top: 15px;

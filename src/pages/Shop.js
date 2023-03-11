@@ -129,7 +129,7 @@ const Shop = () => {
 
             <section className="pt-0">
                 <Container>
-                    <Row>
+                    <Row className="product__card-wrapper">
                         {productsToRender.length === 0 ? (
                             <h1 className="text-center fs-4">
                                 No products are found!

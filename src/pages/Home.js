@@ -68,22 +68,20 @@ const Home = () => {
             <Services />
             <section className="trending__products">
                 <Container>
-                    <Row>
-                        <Col lg="12" className="text-center">
-                            <h2 className="section__title mb-5">
-                                Trending Products
-                            </h2>
-                        </Col>
+                    <h2 className="section__title mb-5 text-center">
+                        Trending Products
+                    </h2>
+                    <Row className="product__card-wrapper">
                         <ProductsList data={trending} />
                     </Row>
                 </Container>
             </section>
             <section className="best__sales">
                 <Container>
-                    <Row>
-                        <Col lg="12" className="text-center">
-                            <h2 className="section__title mb-5">Best Sales </h2>
-                        </Col>
+                    <h2 className="section__title mb-5 text-center">
+                        Best Sales
+                    </h2>
+                    <Row className="product__card-wrapper">
                         <ProductsList data={bestSales} />
                     </Row>
                 </Container>
@@ -91,24 +89,20 @@ const Home = () => {
 
             <section className="new__arrivals">
                 <Container>
-                    <Row>
-                        <Col lg="12" className="text-center">
-                            <h2 className="section__title mb-5">
-                                New Arrivals
-                            </h2>
-                        </Col>
+                    <h2 className="section__title mb-5 text-center">
+                        New Arrivals
+                    </h2>
+                    <Row className="product__card-wrapper">
                         <ProductsList data={newArrivals} />
                     </Row>
                 </Container>
             </section>
             <section className="popular__category">
                 <Container>
-                    <Row>
-                        <Col lg="12" className="text-center">
-                            <h2 className="section__title mb-5">
-                                Popular in Category
-                            </h2>
-                        </Col>
+                    <h2 className="section__title mb-5 text-center">
+                        Popular in Category
+                    </h2>
+                    <Row className="product__card-wrapper">
                         <ProductsList data={popular} />
                     </Row>
                 </Container>

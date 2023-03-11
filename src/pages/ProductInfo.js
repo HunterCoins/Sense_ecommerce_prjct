@@ -16,7 +16,8 @@ const ProductInfo = () => {
 
     const dispatch = useDispatch();
 
-    const { imgUrl, productName, price, description, shortDesc, category } = product;
+    const { imgUrl, productName, price, description, shortDesc, category } =
+        product;
     const relatedProducts = products.filter(
         (item) => item.category === category && item.productName !== productName
     );
@@ -49,12 +50,19 @@ const ProductInfo = () => {
                             <div className="product__details">
                                 <h2>{productName}</h2>
                                 <div className="d-flex align-items-center gap-5">
-                                    <span className="product__price">${price}</span>
-                                    <span>Category: {category.toUpperCase()}</span>
+                                    <span className="product__price">
+                                        ${price}
+                                    </span>
+                                    <span>
+                                        Category: {category.toUpperCase()}
+                                    </span>
                                 </div>
                                 <p className="mt-3">{shortDesc}</p>
 
-                                <button className="buy__btn" onClick={addToCart}>
+                                <button
+                                    className="buy__btn"
+                                    onClick={addToCart}
+                                >
                                     Add to cart
                                 </button>
                             </div>
@@ -64,8 +72,12 @@ const ProductInfo = () => {
                             <p className="mt-4">{description}</p>
                         </Col>
                         <Col lg="12" className="mt-5">
-                            <h2 className="related__title mb-5">You might also like</h2>
+                            <h2 className="related__title mb-5">
+                                You might also like
+                            </h2>
                         </Col>
+                    </Row>
+                    <Row className="product__card-wrapper">
                         <ProductsList data={relatedProducts} />
                     </Row>
                 </Container>

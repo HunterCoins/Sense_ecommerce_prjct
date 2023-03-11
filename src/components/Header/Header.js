@@ -71,8 +71,8 @@ const Header = () => {
 
     const menuToggle = () => menuRef.current.classList.toggle("active__menu");
 
-    const navigateToCart = () => {
-        navigate("/cart");
+    const navigateToCart = (route) => {
+        navigate(route);
     };
 
     return (
@@ -80,7 +80,10 @@ const Header = () => {
             <Container>
                 <Row>
                     <div className="nav__wrapper">
-                        <div className="logo">
+                        <div
+                            className="logo"
+                            onClick={() => navigateToCart("/home")}
+                        >
                             <img src={logo} alt="logo" />
                             <div>
                                 <h1>Sense</h1>
@@ -117,7 +120,7 @@ const Header = () => {
                             </span>
                             <span
                                 className="cart__icon"
-                                onClick={navigateToCart}
+                                onClick={() => navigateToCart("/cart")}
                             >
                                 <i className="ri-shopping-cart-2-line"></i>
                                 <span className="badge">{totalQuantity}</span>
