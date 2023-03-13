@@ -80,7 +80,7 @@ const Login = () => {
 
                                     <button
                                         type="submit"
-                                        className="buy__btn auth__btn"
+                                        className="buy__btn auth__btn login__btn"
                                     >
                                         Login
                                     </button>

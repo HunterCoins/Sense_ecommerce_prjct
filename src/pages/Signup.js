@@ -89,7 +89,7 @@ const Signup = () => {
 
                                     <button
                                         type="submit"
-                                        className="buy__btn auth__btn"
+                                        className="buy__btn auth__btn signup__btn"
                                     >
                                         Create an Account
                                     </button>

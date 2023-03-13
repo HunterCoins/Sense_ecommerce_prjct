@@ -16,6 +16,7 @@
 }
 
 .auth__btn {
+    padding: 8px;
     background: #fff;
     color: var(--primary-color);
     font-weight: 600;
@@ -36,4 +37,40 @@
 .login__bottom a,
 .signup__bottom a {
     margin-left: 5px;
+}
+
+.login__btn,
+.signup__btn {
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .auth__btn {
+        margin-top: 25px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .auth__form {
+        padding: 30px;
+    }
+    .login__title {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .auth__form {
+        padding: 20px;
+    }
+    .auth__btn {
+        margin-top: 15px;
+        padding: 8px;
+        text-align: center;
+        width: 100%;
+    }
+    .form__group input {
+        font-size: 0.9rem;
+    }
 }

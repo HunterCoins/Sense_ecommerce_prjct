@@ -18,10 +18,10 @@ const Cart = () => {
             <section>
                 <Container>
                     <Row>
-                        <Col lg="9">
+                        <Col lg="9" md="12" sm="12" xs="12">
                             {cartItems.length === 0 ? (
-                                <h2 className="fs-4 text-center">
-                                    No item added to the cart
+                                <h2 className="fs-4 text-center noitemsadded">
+                                    No items added to the cart
                                 </h2>
                             ) : (
                                 <table className="table bordered">
@@ -43,16 +43,20 @@ const Cart = () => {
                                 </table>
                             )}
                         </Col>
-                        <Col lg="3">
-                            <div className="d-flex align-items-center justify-content-between">
+                        <Col lg="3" md="12" sm="12" xs="12">
+                            <div className="cart__subtotal d-flex align-items-center justify-content-between">
                                 <h6>Subtotal</h6>
                                 <span className="fs-4 fw-bold">
                                     ${totalAmount}
                                 </span>
                             </div>
-                            <p className="fs-6 mt-2">
-                                taxes and shipping will calculate in checkout
-                            </p>
+                            {cartItems.length === 0 ? null : (
+                                <p className="cart__shipping fs-6 mt-2">
+                                    taxes and shipping will calculate in
+                                    checkout
+                                </p>
+                            )}
+
                             <div>
                                 {cartItems.length === 0 ? null : (
                                     <button className="buy__btn w-100">

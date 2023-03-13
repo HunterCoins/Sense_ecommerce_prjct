@@ -19,3 +19,31 @@ td span {
 td span:active {
     transform: scale(1.3);
 }
+
+@media only screen and (max-width: 992px) {
+    .cart__subtotal {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    thead tr {
+        font-size: 0.8rem;
+    }
+    .table tr td img {
+        width: 70px !important;
+        height: 70px !important;
+    }
+    tbody tr td {
+        font-size: 0.9rem;
+    }
+    .cart__subtotal span {
+        font-size: 1.2rem !important;
+    }
+    .cart__shipping {
+        font-size: 0.9rem !important;
+    }
+    .noitemsadded {
+        font-size: 1.2rem !important;
+    }
+}

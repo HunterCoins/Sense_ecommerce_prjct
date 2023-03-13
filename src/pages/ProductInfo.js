@@ -41,15 +41,15 @@ const ProductInfo = () => {
             <section className="pt-0">
                 <Container>
                     <Row>
-                        <Col lg="6">
+                        <Col lg="6" md="6" sm="6">
                             <div className="product__image">
                                 <img src={imgUrl} alt="product" />
                             </div>
                         </Col>
-                        <Col lg="6">
+                        <Col lg="6" md="6" sm="6">
                             <div className="product__details">
                                 <h2>{productName}</h2>
-                                <div className="d-flex align-items-center gap-5">
+                                <div className="d-flex align-items-center justify-content-between gap-5">
                                     <span className="product__price">
                                         ${price}
                                     </span>
