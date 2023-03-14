@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 
 import { NavLink, useNavigate, Link, useLocation } from "react-router-dom";
 import "./header.css";

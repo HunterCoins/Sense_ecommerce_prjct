@@ -80,9 +80,6 @@
 .nav__icons .profile:hover .profile__actions {
     display: block !important;
 }
-.nav__icons .profile:hover:active .profile__actions {
-    display: none;
-}
 
 .nav__icons .profile .profile__actions div a:nth-child(1) {
     border-bottom: 1px solid rgba(0, 0, 0, 0.233);

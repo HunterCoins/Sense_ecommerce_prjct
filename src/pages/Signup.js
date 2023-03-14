@@ -57,6 +57,7 @@ const Signup = () => {
                                     <FormGroup className="form__group">
                                         <input
                                             type="text"
+                                            name="username"
                                             placeholder="Username"
                                             value={username}
                                             onChange={(e) =>
@@ -68,6 +69,7 @@ const Signup = () => {
                                     <FormGroup className="form__group">
                                         <input
                                             type="email"
+                                            name="email"
                                             placeholder="Enter your email"
                                             value={email}
                                             onChange={(e) =>
@@ -80,6 +82,8 @@ const Signup = () => {
                                         <input
                                             type="password"
                                             placeholder="Enter your password"
+                                            name="password"
+                                            autoComplete="current-password"
                                             value={password}
                                             onChange={(e) =>
                                                 setPassword(e.target.value)
