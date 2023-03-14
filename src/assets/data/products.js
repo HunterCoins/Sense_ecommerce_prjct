@@ -1,7 +1,7 @@
-import pants from "../images/pants.png";
-import shirt from "../images/shirts.png";
-import blazer from "../images/blazer.png";
-import shoes from "../images/shoes.png";
+import pants from "../images/pants.webp";
+import shirt from "../images/shirts.webp";
+import blazer from "../images/blazer.webp";
+import shoes from "../images/shoes.webp";
 const products = [
     {
         id: "01",
